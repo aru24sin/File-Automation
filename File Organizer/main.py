@@ -1,6 +1,22 @@
+#############################################
+#  File-Automation Project
+#  
+#  Algorithm
+#    move into unorganized directory
+#    for loop
+#      if statements
+#        split file name text
+#        index to file type
+#        check if file type in list
+#        if true
+#          move file into proper folder
+#############################################
+
+#libraries
 import os
 import shutil
 
+#lists including specific file types for better organization
 pdfs = (".pdf")
 
 presentations = (".pptx", ".doc", ".ppt", ".docx")
@@ -24,6 +40,7 @@ video = (".webm", ".MTS", ".M2TS", ".TS", ".mov",
 img = (".jpg", ".jpeg", ".jfif", ".pjpeg", ".pjp", ".png",
        ".gif", ".webp", ".svg", ".apng", ".avif")
 
+#functions to check if file is certain file type
 def is_compressed(file):
     return os.path.splitext(file)[1] in zips
 
@@ -53,8 +70,11 @@ def is_screenshot(file):
     return (ext in img) and "screenshot" in name.lower()
 
 def main():
+    #move into unorganized directory
     os.chdir("/Users/daary/Downloads")
 
+    #for loop with if statements for each designated file type
+    #move file into proper folder
     for file in os.listdir():
         if is_code(file):
             shutil.move(file, "C:/Users/daary/OneDrive/Documents/Programming/unsorted")
