@@ -76,7 +76,5 @@ def main():
             else:
                 shutil.move(file, "C:/Users/daary/OneDrive/Documents/images")
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
