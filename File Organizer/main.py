@@ -3,13 +3,14 @@
 #  
 #  Algorithm
 #    move into unorganized directory
-#    for loop
-#      if statements
-#        split file name text
-#        index to file type
-#        check if file type in list
-#        if true
-#          move file into proper folder
+#    while loop for constant organization
+#      for loop
+#        if statements
+#          split file name text
+#          index to file type
+#          check if file type in list
+#          if true
+#            move file into proper folder
 #############################################
 
 #libraries
@@ -75,26 +76,29 @@ def main():
 
     #for loop with if statements for each designated file type
     #move file into proper folder
-    for file in os.listdir():
-        if is_code(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/Programming/unsorted")
-        elif is_app(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/apps")
-        elif is_compressed(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/compressed")
-        elif is_pdf(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/pdfs")
-        elif is_present(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/pptx-docs")
-        elif is_audio(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/audio")
-        elif is_video(file):
-            shutil.move(file, "C:/Users/daary/OneDrive/Documents/video")
-        elif is_image(file):
-            if is_screenshot(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/screenshots")
-            else:
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/images")
+    while True:
+        for file in os.listdir():
+            if is_code(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/Programming/unsorted")
+            elif is_app(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/apps")
+            elif is_compressed(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/compressed")
+            elif is_pdf(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/pdfs")
+            elif is_present(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/pptx-docs")
+            elif is_audio(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/audio")
+            elif is_video(file):
+                shutil.move(file, "C:/Users/daary/OneDrive/Documents/video")
+            elif is_image(file):
+                if is_screenshot(file):
+                    shutil.move(file, "C:/Users/daary/OneDrive/Documents/screenshots")
+                else:
+                    shutil.move(file, "C:/Users/daary/OneDrive/Documents/images")
+
+        os.chdir("/Users/daary/Downloads")
 
 if __name__ == '__main__':
     main()
