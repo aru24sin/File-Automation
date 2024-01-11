@@ -74,6 +74,7 @@ def main():
     #move into unorganized directory
     os.chdir("/Users/daary/Downloads")
 
+    #while loop for constant automated organization
     #for loop with if statements for each designated file type
     #move file into proper folder
     while True:
