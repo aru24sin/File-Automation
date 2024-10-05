@@ -1,5 +1,5 @@
 # File-Automation
-Python file organizer script for windows 
+Python file organizer script for Windows and MacOS
 
 Script searches through the downloads folder for a user and properly allocates the file types into according folders. Easy implementation of new file types. Utilized the os library to give script access to read and write changes in the file system. The shutil library is implemented to move specified files to the proper location for efficient sorting.
 
