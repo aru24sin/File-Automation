@@ -1,3 +1,18 @@
+#############################################
+#  File-Automation Project
+#  
+#  Algorithm
+#    move into unorganized directory
+#    while loop for constant organization
+#      for loop
+#        if statements
+#          split file name text
+#          index to file type
+#          check if file type in list
+#          if true
+#            move file into proper folder
+#############################################
+
 import os
 import shutil
 
