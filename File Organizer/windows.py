@@ -72,7 +72,7 @@ def is_screenshot(file):
 
 def main():
     #move into unorganized directory
-    os.chdir("/Users/daary/Downloads")
+    os.chdir("C:/Users/daary/Downloads")
 
     #while loop for constant automated organization
     #for loop with if statements for each designated file type
@@ -80,24 +80,24 @@ def main():
     while True:
         for file in os.listdir():
             if is_code(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/Programming/unsorted")
+                shutil.move(file, "C:/Users/daary/Documents/Ghxst")
             elif is_app(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/apps")
+                shutil.move(file, "C:/Users/daary/Documents/Apps")
             elif is_compressed(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/compressed")
+                shutil.move(file, "C:/Users/daary/Documents/Compressed")
             elif is_pdf(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/pdfs")
+                shutil.move(file, "C:/Users/daary/Documents/PDF")
             elif is_present(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/pptx-docs")
+                shutil.move(file, "C:/Users/daary/Documents/PPTX-DOC")
             elif is_audio(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/audio")
+                shutil.move(file, "C:/Users/daary/Documents/Audio")
             elif is_video(file):
-                shutil.move(file, "C:/Users/daary/OneDrive/Documents/video")
+                shutil.move(file, "C:/Users/daary/Documents/Video")
             elif is_image(file):
                 if is_screenshot(file):
-                    shutil.move(file, "C:/Users/daary/OneDrive/Documents/screenshots")
+                    shutil.move(file, "C:/Users/daary/Documents/Screenshots")
                 else:
-                    shutil.move(file, "C:/Users/daary/OneDrive/Documents/images")
+                    shutil.move(file, "C:/Users/daary/Documents/Images")
 
         os.chdir("/Users/daary/Downloads")
 
