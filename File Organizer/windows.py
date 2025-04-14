@@ -37,7 +37,7 @@ codes = (".py", ".cpp", ".c", ".h", ".java",
         ".js", ".html", ".css", ".php", ".rb",
         ".swift", ".go", ".pl", ".sh", ".sql",
         ".xml", ".json", ".yaml", ".yml",
-        ".txt", ".csv", ".tsv")
+        ".txt", ".csv", ".tsv", ".ipynb")
 
 audio = (".3ga", ".aac", ".ac3", ".aif", ".aiff",
          ".alac", ".amr", ".ape", ".au", ".dss",
