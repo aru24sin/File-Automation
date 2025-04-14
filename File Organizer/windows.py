@@ -17,8 +17,6 @@
 import os
 import shutil
 
-fileFound = []
-
 #lists including specific file types for better organization
 pdfs = (".pdf")
 
@@ -100,12 +98,6 @@ def main():
     #move file into proper folder
     while True:
         for file in os.listdir():
-            if file in fileFound:
-                print(f'System already organized.')
-                return
-            fileFound.append(file)
-
-            print(f'Organizing {file}...')
             if is_code(file):
                 shutil.move(file, "C:/Users/daary/Documents/Ghxst/Unsorted")
             elif is_app(file):
@@ -127,8 +119,6 @@ def main():
                     shutil.move(file, "C:/Users/daary/Documents/Screenshots")
                 else:
                     shutil.move(file, "C:/Users/daary/Documents/Images")
-            else:
-                break
      
         os.chdir("/Users/daary/Downloads")
 
