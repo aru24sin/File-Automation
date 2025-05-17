@@ -22,7 +22,7 @@ pdfs = (".pdf", ".epub")
 presentations = (".pptx", ".doc", ".ppt", ".docx")
 zips = (".zip", ".dmg", ".gz")
 apps = (".exe")
-codes = (".py", ".cpp", ".c")
+codes = (".py", ".cpp", ".c", ".csv", ".ipynb")
 audio = (".3ga", ".aac", ".ac3", ".aif", ".aiff",
          ".alac", ".amr", ".ape", ".au", ".dss",
          ".flac", ".flv", ".m4a", ".m4b", ".m4p",
